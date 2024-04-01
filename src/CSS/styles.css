@@ -1,0 +1,470 @@
+.small-navbars {
+    background-color: blue; 
+    padding: 10px 0; 
+  }
+  .timings {
+    color: #ffffff; 
+  }
+  .social-icons {
+    color: #ffffff; 
+  }
+  @media (max-width: 768px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+  .navbar.navbar-dark.bg-darks {
+    background-color: #1e73cd ;
+  }
+  
+.logo-img {
+    width: 100px; 
+    height: auto; 
+    margin-right: 10px;
+  }
+  .navbar-nav {
+    margin: 0 auto;
+    text-align: center; 
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 15px;
+  }
+  .nav-item {
+    animation: fadeInUp 1.0s ease forwards;
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* styles.css */
+.navbar {
+  position:-ms-page;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; /* Set a higher z-index */
+}
+.btn-outline-light{
+  max-height: 40px;
+}
+
+/* Bring the product menu to the front when the top bar is not hovered over */
+.navbar.top-bar-hovered {
+  z-index: 1; /* Set a lower z-index */
+}
+
+  .navbar-nav .nav-link {
+    color: #ffffff; 
+    font-size: 16px; 
+    font-weight: bold;
+    text-transform: uppercase; 
+    margin-right: 15px; 
+    text-decoration: none;
+    transition: color 0.3s, border-bottom-color 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link.active {
+    text-decoration: underline; 
+}
+.nav-item.active a {
+  background-color: blue; 
+  color: white; 
+}
+.nav-item a:hover {
+  background-color: rgb(5, 115, 152); 
+}
+@keyframes rocket {
+  0% {
+    width: 0%;
+    left: 50%;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0%;
+    left: 50%;
+  }
+}
+.nav-link:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(30, 163, 83);
+  animation: rocket 1s infinite linear;
+}
+.navbar-nav .nav-link:hover {
+  text-decoration: none;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  margin-top: 18%;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation for footer sections */
+.footer-section {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  animation: slideInLeft 1s ease;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.footer-section h3::after {
+  content: '';
+  display: block;
+  width: 50%; 
+  height: 2px; 
+  background-color: #FFA500; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer a:hover {
+  color: #ff7f50;
+}
+.footer-links, .footer-address, .footer-social {
+  list-style: none;
+  padding: 0;
+}
+.footer-links li, .footer-address li {
+  margin-bottom: 5px;
+  transition: transform 0.3s ease;
+}
+.footer-links li:hover {
+  transform: translateY(-3px); 
+  transform: scale(1.4);
+}
+.footer-social li svg {
+  font-size: 34px; 
+  transition: transform 0.3s ease;
+}
+.footer-social li:hover svg {
+  transform: scale(1.9); 
+}
+.footer-social li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-line {
+  width: 100%;
+  color: white;
+}
+.copy-right {
+  text-align: center;
+  flex-basis: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-section {
+    flex: 0 0 100%;
+  }
+}
+/* Add a new class for the dropdown menu */
+.dropdown-menu {
+  display: none; /* Initially hide the dropdown menu */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999; /* Ensure the dropdown menu stays on top of other elements, including backgrounds */
+  background-color: #1e73cd; /* Background color of the dropdown menu */
+}
+
+/* Show the dropdown menu when the parent item is hovered */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Style the dropdown items */
+.dropdown-menu li {
+  padding: 10px;
+}
+
+.dropdown-menu li:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Change background color on hover */
+}
+
+.custom-carousel {
+  width: 100%;
+}
+.custom-carousel .carousel-item img {
+  max-width: 100%;
+  height: 600px;
+}
+.custom-carousel .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.custom-carousel .carousel-caption h3 {
+  font-size: 24px;
+}
+.custom-carousel .carousel-caption p {
+  font-size: 16px;
+}
+.product-card {
+  margin-top: 2%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  width: calc(25% - 32px); 
+  margin-right: 16px; 
+  float: left; 
+  transition: transform 0.1s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-20px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+.product-card img {
+  width: 100%;
+  border-radius:0px;
+  margin-bottom: 8px;
+  height:200px;
+}
+.product-card h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.product-card p {
+  font-size: 14px;
+  color: #888;
+}
+.product-list::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.headingproduct{
+  text-align: center;
+  margin-top: 5%;
+  text-decoration:underline;
+  color: #ffffff;
+}
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .product-card {
+    width: calc(50% - 16px); 
+  }
+}
+@media (max-width: 576px) {
+  .product-card {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+.productdatahome{
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+.product-page {
+  position: relative;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+/* Default styles for the cards */
+.empty-card.click-for-more {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.3); 
+  border-radius: 8px;
+  width: 250px; 
+  height: 275px; 
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.9s ease;
+  margin-right: 20px; 
+  float: left; 
+  margin-top: 25px;
+  overflow: hidden; /* Ensure content doesn't overflow */
+  position: relative; /* Positioning context for pseudo-elements */
+}
+
+/* Adjustments for mobile devices */
+@media (max-width: 768px) {
+  .empty-card.click-for-more {
+    width: calc(100% - 0px); /* Two cards per row */
+    margin-right: 0;
+    margin-bottom: 0px; /* Add space between rows */
+  }
+
+  .empty-card.click-for-more:last-child {
+    margin-bottom: 0; /* Remove margin for the last card in the row */
+  }
+}
+
+.empty-card.click-for-more:hover {
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white on hover */
+}
+
+.empty-card.click-for-more h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333; 
+  text-align: center;
+  margin-top: 40%;
+  font-weight: bold;
+}
+
+.empty-card.click-for-more p {
+  font-size: 14px; /* Adjust font size */
+  color: #666; /* Adjust font color */
+}
+
+.empty-card.click-for-more::after {
+  content: ''; /* Pseudo-element for overlay effect */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.empty-card.click-for-more:hover::after {
+  opacity: 1; /* Show overlay on hover */
+}
+.productinside {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+.productitemssmallcards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 10; /* This height value seems unusually small, consider adjusting */
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  margin: 10px;
+  color: blue;
+  transition: background-color 0.3s ease;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.productitemssmallcards:hover {
+  background-color: #ADD8E6;
+  transform: translateY(-10px);
+}
+
+.productitemssmallcards h2 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+a {
+  text-decoration: none;
+}
+.insideproductheading{
+  text-align: center;
+  text-decoration: underline;
+}
+.contactbackground{
+  background-color:#ff5733 ;
+  min-height:'100vh'; 
+}
+/* contactStyles.css */
+.contact-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-info-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-weight: bold;
+}
+.mb-4000{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.contact-info-card p {
+  margin-bottom: 10px;
+}

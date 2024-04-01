@@ -1,0 +1,62 @@
+/* adminProductStyles.css */
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.card form {
+  margin-bottom: 15px;
+}
+
+.card label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.card input[type="file"],
+.card input[type="number"],
+.card input[type="text"],
+.card button {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.card button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #45a049;
+}
+
+.image-info {
+  margin-bottom: 10px;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}

@@ -1,0 +1,39 @@
+/* About.css */
+
+.about-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .about-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .about-text {
+    text-align: justify;
+  }
+  
+  .about-title {
+    text-align: center;
+  }
+  
+  .about-paragraph {
+    line-height: 1.8;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
